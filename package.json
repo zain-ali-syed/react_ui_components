@@ -13,7 +13,10 @@
     }
   },
   "lint-staged": {
-    "*.js": "hello"
+    "*": [
+      "npm run lint:fix",
+      "git add"
+    ]
   },
   "repository": {
     "type": "git",
