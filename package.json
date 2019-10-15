@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "lint": "echo whats up",
+    "lint": "echo 'whats up'",
     "lint:fix": "prettier-eslint '**/*.js' --write"
   },
   "husky": {
