@@ -1,0 +1,20 @@
+{
+  "name": "react_ui_components",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zain-ali-syed/React_UI_Components.git"
+  },
+  "keywords": ["react", "components"],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zain-ali-syed/React_UI_Components/issues"
+  },
+  "homepage": "https://github.com/zain-ali-syed/React_UI_Components#readme"
+}
