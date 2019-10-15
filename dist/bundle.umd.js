@@ -1,18 +1,13 @@
-(function(global, factory) {
-  typeof exports === 'object' && typeof module !== 'undefined'
-    ? (module.exports = factory(require('react')))
-    : typeof define === 'function' && define.amd
-    ? define(['react'], factory)
-    : ((global = global || self),
-      (global['react-ui-components'] = factory(global.React)))
-})(this, function(React) {
+!(function(e, t) {
+  'object' == typeof exports && 'undefined' != typeof module
+    ? (module.exports = t(require('react')))
+    : 'function' == typeof define && define.amd
+    ? define(['react'], t)
+    : ((e = e || self)['react-ui-components'] = t(e.React))
+})(this, function(e) {
   'use strict'
-
-  React = React && React.hasOwnProperty('default') ? React['default'] : React
-
-  var index = function index() {
-    return React.createElement('div', null, 'Hello I am react')
+  e = e && e.hasOwnProperty('default') ? e.default : e
+  return function() {
+    return e.createElement('div', null, 'Hello I am react')
   }
-
-  return index
 })
