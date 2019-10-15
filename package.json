@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "lint": "echo 'whats up'",
+    "lint": "eslint '**/*.js'",
     "lint:fix": "prettier-eslint '**/*.js' --write"
   },
   "husky": {
@@ -13,7 +13,10 @@
     }
   },
   "lint-staged": {
-    "**/*.js": "echo hello"
+    "*.js": [
+      "npm run lint:fix",
+      "git add"
+    ]
   },
   "repository": {
     "type": "git",
