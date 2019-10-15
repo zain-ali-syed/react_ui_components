@@ -1,0 +1,4 @@
+.prettierignore
+.gitignore
+dist
+node_modules
