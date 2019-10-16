@@ -48,9 +48,5 @@
     "rollup-plugin-babel": "^4.3.3",
     "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-terser": "^5.1.2"
-  },
-  "dependencies": {
-    "react": "^16.10.2",
-    "react-dom": "^16.10.2"
   }
 }
