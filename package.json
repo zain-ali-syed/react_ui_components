@@ -7,7 +7,8 @@
     "prebuild": "rimraf dist",
     "build": "rollup -c",
     "lint": "eslint '**/*.js'",
-    "lint:fix": "prettier-eslint '**/*.js' --write"
+    "lint:fix": "prettier-eslint '**/*.js' --write",
+    "storybook": "start-storybook"
   },
   "husky": {
     "hooks": {
@@ -37,6 +38,12 @@
     "@babel/core": "^7.6.4",
     "@babel/preset-env": "^7.6.3",
     "@babel/preset-react": "^7.6.3",
+    "@storybook/addon-actions": "^5.2.4",
+    "@storybook/addon-knobs": "^5.2.4",
+    "@storybook/addon-notes": "^5.2.4",
+    "@storybook/addons": "^5.2.4",
+    "@storybook/react": "^5.2.4",
+    "babel-loader": "^8.0.6",
     "eslint": "^6.5.1",
     "eslint-plugin-react": "^7.16.0",
     "husky": "^3.0.9",
@@ -47,13 +54,17 @@
     "rollup": "^1.24.0",
     "rollup-plugin-babel": "^4.3.3",
     "rollup-plugin-node-resolve": "^5.2.0",
-    "rollup-plugin-terser": "^5.1.2",
-    "rollup-plugin-string": "^3.0.0"
+    "rollup-plugin-string": "^3.0.0",
+    "rollup-plugin-terser": "^5.1.2"
   },
   "peerDependencies": {
     "react": ">16.2"
   },
   "engines": {
     "node": ">=8"
+  },
+  "dependencies": {
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2"
   }
 }
