@@ -10,7 +10,11 @@
     "build": "rollup -c",
     "lint": "eslint '**/*.js'",
     "lint:fix": "prettier-eslint '**/*.js' --write",
-    "storybook": "start-storybook"
+    "storybook": "start-storybook",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:staged": "jest --findRelatedTests",
+    "test:coverage": "jest --coverage"
   },
   "husky": {
     "hooks": {
@@ -19,7 +23,9 @@
   },
   "lint-staged": {
     "*": [
-      "npm run lint:fix"
+      "npm run lint:fix",
+      "npm test",
+      "git add"
     ]
   },
   "repository": {
@@ -45,13 +51,16 @@
     "@storybook/addon-notes": "^5.2.4",
     "@storybook/addons": "^5.2.4",
     "@storybook/react": "^5.2.4",
+    "babel-jest": "^24.9.0",
     "babel-loader": "^8.0.6",
     "eslint": "^6.5.1",
     "eslint-plugin-react": "^7.16.0",
     "husky": "^3.0.9",
+    "jest": "^24.9.0",
     "lint-staged": "^9.4.2",
     "prettier-eslint": "^9.0.0",
     "prettier-eslint-cli": "^5.0.0",
+    "react-test-renderer": "^16.10.2",
     "rimraf": "^3.0.0",
     "rollup": "^1.24.0",
     "rollup-plugin-babel": "^4.3.3",
@@ -66,7 +75,13 @@
     "node": ">=8"
   },
   "dependencies": {
+    "eslint-plugin-jest": "^22.19.0",
     "react": "^16.10.2",
     "react-dom": "^16.10.2"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(css)$": "<rootDir>/__mocks__/styleMock.js"
+    }
   }
 }
