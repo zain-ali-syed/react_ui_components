@@ -1,3 +1,3 @@
 it('adds correctly', () => {
-  expect(2 + 2).toBe(6)
+  expect(2 + 2).toBe(7)
 })
