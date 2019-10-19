@@ -1,5 +1,8 @@
 .prettierignore
 .gitignore
+.eslintignore
 dist
 node_modules
 examples
+coverage
+__snapshots__
