@@ -1,2 +1,2 @@
 # React_UI_Components!
-test
+A template for creating a library of shareable React components for use in other applications.
