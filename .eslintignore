@@ -1,7 +1,7 @@
 __snapshots__
-examples
 __mocks__
 dist
 stories
 rollup.config.js
 storybook-static
+examples
