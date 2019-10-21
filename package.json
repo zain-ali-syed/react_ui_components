@@ -1,6 +1,6 @@
 {
   "name": "@zain_syed/react_ui_components",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "",
   "main": "./dist/bundle.cjs.js",
   "module": "./dist/bundle.esm.js",
