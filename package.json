@@ -15,7 +15,10 @@
     "test:watch": "jest --watch",
     "test:staged": "jest --findRelatedTests",
     "test:coverage": "jest --coverage",
-    "test:coveralls": "jest --coverage --coverageReporters=text-lcov | coveralls"
+    "test:coveralls": "jest --coverage --coverageReporters=text-lcov | coveralls",
+    "storybook:build": "build-storybook -c .storybook",
+    "predeploy": "npm run test && rimraf storybook-static && npm run storybook:build",
+    "deploy": "gh-pages -d storybook-static"
   },
   "husky": {
     "hooks": {
@@ -57,6 +60,7 @@
     "coveralls": "^3.0.7",
     "eslint": "^6.5.1",
     "eslint-plugin-react": "^7.16.0",
+    "gh-pages": "^2.1.1",
     "husky": "^3.0.9",
     "jest": "^24.9.0",
     "lint-staged": "^9.4.2",
