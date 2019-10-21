@@ -6,3 +6,4 @@ node_modules
 examples
 coverage
 __snapshots__
+storybook-static
