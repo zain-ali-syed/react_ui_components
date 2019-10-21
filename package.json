@@ -1,10 +1,11 @@
 {
-  "name": "react_ui_components",
+  "name": "@zain_syed/react_ui_components",
   "version": "1.0.0",
   "description": "",
   "main": "./dist/bundle.cjs.js",
   "module": "./dist/bundle.esm.js",
   "sideEffects": false,
+  "files":["dist"],
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "rollup -c",
@@ -18,7 +19,8 @@
     "test:coveralls": "jest --coverage --coverageReporters=text-lcov | coveralls",
     "storybook:build": "build-storybook -c .storybook",
     "predeploy": "npm run test && rimraf storybook-static && npm run storybook:build",
-    "deploy": "gh-pages -d storybook-static"
+    "deploy": "gh-pages -d storybook-static",
+    "prepublish": "npm run build"
   },
   "husky": {
     "hooks": {
