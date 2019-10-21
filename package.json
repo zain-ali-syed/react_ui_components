@@ -45,7 +45,7 @@
   "bugs": {
     "url": "https://github.com/zain-ali-syed/React_UI_Components/issues"
   },
-  "homepage": "https://github.com/zain-ali-syed/React_UI_Components#readme",
+  "homepage": "https://zain-ali-syed.github.io/react_ui_components/?path=/story/react-css-spinners--ripple",
   "devDependencies": {
     "@babel/core": "^7.6.4",
     "@babel/preset-env": "^7.6.3",
